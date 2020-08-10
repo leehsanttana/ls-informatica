@@ -130,6 +130,44 @@ colors{
     font-size: 1.2rem;
 }
 
+.circulo-thumb{
+    margin: auto;
+    margin-top: 5rem;
+    font-size: 4.5em;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+    text-align: center;
+    transition: .5s;
+    
+}
+
+.circulo-thumb-inner{
+    background: #1b1b1b;
+    transition: .5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.circulo-thumb-inner i{
+    background: -webkit-linear-gradient(#3a7dd5, #3a4ed5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.circulo-thumb-inner img{
+    transition: .5s ease;
+}
+
+.circulo-thumb-inner:hover{
+    background: #080808;
+}
+
+.circulo-thumb-inner img:hover{
+    transform: scale(1.2);
+}
+
 @media only screen and (min-width: 768px) {
 
     /* coluna esquerda */
@@ -200,7 +238,7 @@ colors{
 
     .column-right{
         width: 100%;
-        height: 800px;
+        height: auto;
         position: relative;
         left: 16.6%;
         color: #fff;
@@ -208,9 +246,8 @@ colors{
 
     .main{
         position: relative;
-        top: 30%;
-        left: 30%;
-        transform: translate(-30%, -30%);
+        top: 20%;
+        height: 800px;
     }
 
     .circulo{
@@ -273,6 +310,38 @@ colors{
         width: 100%;
         height: 100%;
         font-size: 1.2rem;
+    }
+    
+    .circulo-thumb{
+        margin: auto;
+        margin-top: 5rem;
+        font-size: 4.5em;
+        width: 150px;
+        height: 150px;
+        padding: 3px;
+        background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+        text-align: center;
+        transition: .5s;
+        
+    }
+
+    .circulo-thumb-inner{
+        background: #1b1b1b;
+        transition: .5s ease;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circulo-thumb-inner img{
+        transition: .5s ease;
+    }
+
+    .circulo-thumb-inner:hover{
+        background: #080808;
+    }
+
+    .circulo-thumb-inner img:hover{
+        transform: scale(1.2);
     }
 
 }
