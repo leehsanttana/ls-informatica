@@ -344,5 +344,11 @@ colors{
         transform: scale(1.2);
     }
 
+    .service-item a{
+        background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
 }
 
