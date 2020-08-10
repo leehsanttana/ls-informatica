@@ -1,23 +1,24 @@
 colors{
-    color: #0466C8;
-    color: #0353A4;
-    color: #023E7D;
-    color: #002855;
-    color: #001845;
-    color: #001233;
-    color: #33415C;
-    color: #5C677D;
-    color: #7D8597;
-    color: #7D8597;
-    color: #979DAC;
+    color: #3a7dd5;
+    color: #3a4ed5;
+    color: #080808;
+    color: #1b1b1b;
+    color: #ffffff;
+    color: #ebebeb;
 }
 
-.bg-column{
-    background-color: #002855;
+.bg-section{
+    background-color: #000000;
+}
+
+.bg-left{
+    background-color: #080808;
 }
 
 .bg-column2{
-    background-color: #001233;
+    background-image: linear-gradient(to right, rgba(8,8,8,.9), rgba(0,0,0,.7)), url(../img/banner-section.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .column-left{
@@ -25,28 +26,113 @@ colors{
     float: left;
 }
 
+
+.main-item{
+    display: block;
+    margin: auto;
+    border: 2px solid transparent;
+    background: linear-gradient(to left, #3a7dd5 25%, #3a4ed5 100%);
+    padding: .1px;
+    margin-bottom: .3rem;
+    border-radius: 3px;
+}
+
+.main-item-inner{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 3px;
+}
+
+.main-item a{
+    color: #fff;
+    transition: .5s ease;
+}
+
+.main-item a:hover{
+    color: #ebebeb;
+    font-size: 1.1rem;
+}
+
+.info{
+    display: none;
+}
+
+/* coluna direita */
+
 .column-right{
     width: 100%;
     position: relative;
     color: #fff;
+
 }
 
-.main-item{
-    display: block;
-    background: #00346e;
+.circulo{
+    margin-top: 5rem;
+    font-size: 2em;
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+    text-align: center;
+    transition: .5s;
+
+}
+
+.circulo-inner{
+    background: #1b1b1b;
     transition: .5s ease;
-    border-bottom: 1.5px solid #fff;
-    margin: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+
 }
 
-.main-item:hover{
-    transform: scale(1.025);
+.link-seta{
+    display: block;
+    background: -webkit-linear-gradient(#3a7dd5, #3a4ed5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+    animation-name: flutuacao;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
 }
 
+ .circulo-inner:hover{
+    background: #080808;
+}
+
+
+@keyframes flutuacao{
+    from{
+        padding-top: 5px;
+    }
+
+    to{
+        padding-top: 20px;
+    }
+}
+
+.box{
+    background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+    padding: 3px;
+    width: 100%;
+    height: auto;
+}
+
+.inner-box{
+    background: #080808;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+}
 
 @media only screen and (min-width: 768px) {
+
+    /* coluna esquerda */
 
     .column-left{
         width: 100%;
@@ -54,31 +140,140 @@ colors{
         position: fixed !important;
         float: left;
     }
+
+    .main-item{
+        display: block;
+        background: linear-gradient(to left, #3a7dd5 25%, #3a4ed5 100%);
+        padding: .1px;
+        width: 100%;
+        margin-bottom: .3rem;
+        border-radius: 5px;
+    }
     
+    .main-item-inner{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        border-radius: 5px;
+    }
+
+    .main-item a{
+        color: #fff;
+        font-size: 1.5rem;
+        transition: .5s ease;
+    }
+
+    .main-item a:hover{
+        color: #ebebeb;
+        font-size: 1.6rem;
+    }
+
+    .info{
+        display: block;
+        position: relative;
+        top: 32%;
+        text-align: center;
+        background: -webkit-linear-gradient(#3a7dd5, #3a4ed5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .info p i{
+        font-size: 1.2rem;
+        margin-right: .5rem;
+    }
+    
+    .info .nav a{
+        background: -webkit-linear-gradient(#3a7dd5, #3a4ed5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.5rem;
+        transition: .5s ease;
+    }
+
+    .info .nav a:hover{
+        font-size: 1.7rem;
+    }
+
+    /* coluna direita */
+
     .column-right{
         width: 100%;
-        height: 1000px;
+        height: 800px;
         position: relative;
         left: 16.6%;
         color: #fff;
     }
 
-    .main-item{
-        display: block;
-        background: #00346e;
+    .main{
+        position: relative;
+        top: 30%;
+        left: 30%;
+        transform: translate(-30%, -30%);
+    }
+
+    .circulo{
+        margin-top: 5rem;
+        font-size: 2em;
+        width: 80px;
+        height: 80px;
+        padding: 3px;
+        background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+        text-align: center;
+        transition: .5s;
+
+    }
+
+    .circulo-inner{
+        background: #1b1b1b;
         transition: .5s ease;
-        border-bottom: 1.5px solid #fff;
         width: 100%;
+        height: 100%;
+
     }
     
-    .main-item:hover{
-        transform: scale(1.025);
+    .link-seta{
+        display: block;
+        background: -webkit-linear-gradient(#3a7dd5, #3a4ed5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .5s;
+        animation-name: flutuacao;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
     }
     
-    .main-item a{
-        color: #fff;
-        font-size: 1.5rem;
+     .circulo-inner:hover{
+        background: #080808;
     }
     
+    
+    @keyframes flutuacao{
+        from{
+            padding-top: 5px;
+        }
+    
+        to{
+            padding-top: 20px;
+        }
+    }
+
+    .box{
+        background: linear-gradient(to top, #3a7dd5 0%, #3a4ed5 100%);
+        padding: 3px;
+        width: 100%;
+        height: auto;
+    }
+
+    .inner-box{
+        background: #080808;
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+    }
+
 }
 
