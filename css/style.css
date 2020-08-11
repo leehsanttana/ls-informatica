@@ -42,7 +42,14 @@ colors{
 
 .column-left{
     width: 100%;
+    height: auto;
     float: left;
+    position: fixed !important;
+    z-index: 10;
+}
+
+.brand{
+    display: none;
 }
 
 
@@ -87,8 +94,15 @@ colors{
 
 }
 
+.main-section{
+    position: relative;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
 .circulo{
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 2em;
     width: 80px;
     height: 80px;
@@ -215,9 +229,13 @@ colors{
 
     .column-left{
         width: 100%;
-        height: 800px;
+        height: 100%;
         position: fixed !important;
         float: left;
+    }
+
+    .brand{
+        display: block;
     }
 
     .main-item{
@@ -285,7 +303,7 @@ colors{
         color: #fff;
     }
 
-    .main{
+    .main-section{
         position: relative;
         top: 20%;
         height: 800px;
