@@ -21,6 +21,18 @@ colors{
     background-attachment: fixed;
 }
 
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(to left, rgba(58, 125, 213, .7) 25%, rgba(58, 78, 213, .7) 100%);
+    border-color: #000 !important;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background: linear-gradient(to left, rgba(58, 125, 213, 1) 25%, rgba(58, 78, 213, 1) 100%);
+    border-color: transparent;
+  }
+
 .column-left{
     width: 100%;
     float: left;
@@ -166,6 +178,28 @@ colors{
 
 .circulo-thumb-inner img:hover{
     transform: scale(1.2);
+}
+
+.service-item a{
+    background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group .form-control{
+    background: #1b1b1b;
+    border-color: #3a4ed5;
+    color: #ebebeb;
+}
+
+.form-group .form-control::placeholder{
+    color: #fff;
+}
+
+.form-group .form-control:focus{
+    background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
+    border-color: #3a4ed5;
+    color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -349,6 +383,35 @@ colors{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    
+    .content-image{
+        width: 100%;
+        height: 300px;
+    }
+
+    .content-image img{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form-group .form-control{
+        background: #1b1b1b;
+        border-color: #3a4ed5;
+        color: #ebebeb;
+    }
+
+    .form-group .form-control::placeholder{
+        color: #fff;
+    }
+
+    .form-group .form-control:focus{
+        background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
+        border-color: #3a4ed5;
+        color: #fff;
+    }
+
 
 }
 
