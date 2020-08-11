@@ -21,6 +21,13 @@ colors{
     background-attachment: fixed;
 }
 
+.bg-contact{
+    background-image: linear-gradient(to right, rgba(8,8,8,.9), rgba(0,0,0,.9)), url(../img/contact.jpg);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .btn-primary {
     color: #fff;
     background: linear-gradient(to left, rgba(58, 125, 213, .7) 25%, rgba(58, 78, 213, .7) 100%);
