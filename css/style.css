@@ -220,7 +220,7 @@ colors{
 .form-group .form-control:focus{
     background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
     border-color: #3a4ed5;
-    color: #fff;
+    color: #000;
 }
 
 @media only screen and (min-width: 768px) {
@@ -434,7 +434,7 @@ colors{
     .form-group .form-control:focus{
         background: -webkit-linear-gradient(left, #3a7dd5, #3a4ed5);
         border-color: #3a4ed5;
-        color: #fff;
+        color: #000;
     }
 
 
