@@ -4,7 +4,7 @@ function scrollNav() {
     $(this).addClass("active");
     
     $('html, body').stop().delay(200).animate({
-      scrollTop: $($(this).attr('href')).offset().top -78 
+      scrollTop: $($(this).attr('href')).offset().top 
     }, 600);
     return false;
   });
@@ -22,25 +22,8 @@ function scrollButtom() {
   });
 }
 
-function scrollOrcamento() {
-  $('.btn-orcamento').click(function(){
-    $(".active").removeClass("active");     
-    $(this).addClass("active");
-    
-    $('html, body').stop().delay(200).animate({
-      scrollTop: $($(this).attr('href')).offset().top 
-    }, 600);
-    return false;
-  });
-}
-
-function rotate(){
-  document.getElementById("girar").classList.toggle('toggler');
-}
-
 scrollNav();
 scrollButtom();
-scrollOrcamento();
 
 
 // Disable form submissions if there are invalid fields
