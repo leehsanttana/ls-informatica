@@ -7,6 +7,10 @@ colors{
     color: #ebebeb;
 }
 
+#sobre, #servicos, #contatos{
+    padding-top: 3rem !important;
+}
+
 .bg-section{
     background-color: #000000;
 }
@@ -56,11 +60,10 @@ colors{
 .main-item{
     display: block;
     margin: auto;
-    border: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     background: linear-gradient(to left, #3a7dd5 25%, #3a4ed5 100%);
     padding: .1px;
     margin-bottom: .3rem;
-    border-radius: 3px;
 }
 
 .main-item-inner{
@@ -68,7 +71,7 @@ colors{
     width: 100%;
     height: 100%;
     background: #000;
-    border-radius: 3px;
+    text-align: center;
 }
 
 .main-item a{
@@ -78,7 +81,7 @@ colors{
 
 .main-item a:hover{
     color: #ebebeb;
-    font-size: 1.1rem;
+    transform: scale(1.1);
 }
 
 .info{
@@ -240,9 +243,9 @@ colors{
 
     .main-item{
         display: block;
+        border: 2px solid transparent;
         background: linear-gradient(to left, #3a7dd5 25%, #3a4ed5 100%);
-        padding: .1px;
-        width: 100%;
+        width: 13rem;
         margin-bottom: .3rem;
         border-radius: 5px;
     }
@@ -253,6 +256,7 @@ colors{
         height: 100%;
         background: #000;
         border-radius: 5px;
+        text-align: center;
     }
 
     .main-item a{
@@ -263,7 +267,7 @@ colors{
 
     .main-item a:hover{
         color: #ebebeb;
-        font-size: 1.6rem;
+        transform: scale(1.1);
     }
 
     .info{

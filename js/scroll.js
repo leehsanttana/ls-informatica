@@ -1,10 +1,10 @@
 function scrollNav() {
-  $('.nav a').click(function(){
+  $('.navbar a').click(function(){
     $(".active").removeClass("active");     
     $(this).addClass("active");
     
     $('html, body').stop().delay(200).animate({
-      scrollTop: $($(this).attr('href')).offset().top 
+      scrollTop: $($(this).attr('href')).offset().top
     }, 600);
     return false;
   });
